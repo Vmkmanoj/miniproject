@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import time
 
 
 
@@ -31,6 +32,7 @@ def on_leave(e):
 
 
 def load():
+        time.sleep(2)
 
     name1=name.get()
     passw=password.get()
