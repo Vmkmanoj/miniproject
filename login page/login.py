@@ -26,13 +26,24 @@ def on_enter(e):
 def on_leave(e):
     entery1.delete(0,"end")
 
+def create():
+    new=Toplevel(root)
+    new.geometry("300x300")
+    new.config(bg="white")
+    new.title("create acc")
+    new.resizable(False,False)
+    Label(new,text="let create a acc",font="arial 22",bg="white").place(x=5,y=5)
+
+    new.mainloop()
+    
+    
 
 
 
 
 
 def load():
-        time.sleep(2)
+    time.sleep(2)
 
     name1=name.get()
     passw=password.get()
@@ -58,7 +69,10 @@ Label(root,image=img,bg="white").place(x=20,y=40)
 
 ########-----input---###########
 
+
 frame=Frame(root,width=300,height=300,bg="white",border=10).place(x=500,y=60)
+sign=Button(frame,text="create account..",font="Arial 7",bg="white",command=lambda:create()).place(x=600,y=280)
+
 
 heading=Label(frame,text="Sign in",font=("microsoft yahei ui light",15,"bold"),bg="white").place(x=610,y=75)
 #------shoring-----#
@@ -92,6 +106,7 @@ Frame(frame,width=200,height=2,bg="black").place(x=550,y=205)
 
 but=Button(frame,text="submit",font=("microsoft yahei ui light",10),bg="#71acd9",command=lambda:load(),width=23)
 but.place(x=550,y=220)
+
 
 
 
