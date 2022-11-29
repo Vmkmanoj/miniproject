@@ -53,5 +53,5 @@ bu22=tk.Button(root,text="-",height=2,width=4,font=("Arial,2"),command=lambda:ca
 but3=tk.Button(root,text="=",height=2,width=4,font=("Arial,2"),command=evl).place(x=220,y=240)
 bu23=tk.Button(root,text="*",height=2,width=4,font=("Arial,2"),command=lambda:cal("*")).place(x=220,y=50)
 bu22=tk.Button(root,text="/",height=2,width=4,font=("Arial,2"),command=lambda:cal("/")).place(x=160,y=240)
-
+#calction
 root.mainloop()
